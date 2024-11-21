@@ -1,0 +1,15 @@
+{"Question": "What percentage of users fall into each predefined age group (e.g., 18-25, 26-35, 36-45) based on the users' birthdates provided in the dataset?"}
+{"Question": "Which city, among the cities listed in the user data, has the highest number of registered users?"}
+{"Question": "What is the month-over-month growth rate of new user sign-ups, calculated from the sign-up date field over the past 12 months?"}
+{"Question": "What is the average number of logins per user per month, based on the login timestamp field available for each user?"}
+{"Question": "What percentage of users have no recorded activity (login or transaction) after 30 days from their sign-up date?"}
+{"Question": "How many users are still actively logging in after their first 7 days, 30 days, and 90 days, based on the timestamps in the login history field?"}
+{"Question": "Group users into three segments (low, medium, high activity) based on the total number of logins in the login history. What is the size of each segment?"}
+{"Question": "At which hour of the day (based on the login timestamp data) do users log in most frequently?"}
+{"Question": "What percentage of users registered using mobile devices versus desktop platforms, based on the sign-up source field?"}
+{"Question": "What is the average revenue per user (ARPU) per month, calculated from the transaction amount field, divided by the total number of users for each month?"}
+{"Question": "Which product, identified by the product ID field, generates the most revenue based on the transaction amount field for each region (using the region field)?"}
+{"Question": "From the support request field, what are the top 5 most common reasons for user support requests?"}
+{"Question": "What is the average value of transactions per user, calculated from the transaction amount field, grouped by user region (using the region field)?"}
+{"Question": "What percentage of users, based on the user ID field, made at least one purchase within the first 30 days after their sign-up date?"}
+{"Question": "Using data from the login history within the first 7 days, can we identify patterns (e.g., number of logins, time between logins) that predict whether a user will churn within 30 days of sign-up?"}

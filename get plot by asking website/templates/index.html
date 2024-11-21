@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Plot By Asking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<div class="container mx-auto mt-8 p-6 bg-white shadow-md">
+    <h1 class="text-3xl font-bold text-center mb-4">Get Plot By Asking</h1>
+    <form action="/upload" enctype="multipart/form-data" method="post" class="flex flex-col items-center space-y-4">
+        <input type="file" name="file" accept=".csv" class="px-4 py-2 border rounded-md" required>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700">Upload Dataset</button>
+    </form>
+
+    {% if plot_images %}
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold mb-4">Generated Plots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {% for img in plot_images %}
+                    <img src="{{ img }}" alt="Plot" class="border rounded-md shadow-md">
+                {% endfor %}
+            </div>
+            <a href="/download_plots" class="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700">Download All Plots</a>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
